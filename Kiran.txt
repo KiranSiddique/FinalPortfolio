@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!-- HTML5 document type declaration -->
+<html lang="en"> <!-- Document language set to English -->
+<head> <!-- Head section starts -->
+  <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes website mobile responsive -->
+  <title>Kiran Siddique | Portfolio</title> <!-- Browser tab title -->
+
+  <style> /* CSS styling section starts */
+
+    body { /* Body styling start */
+      background-color: white; /* Page background color set to white */
+      color: black; /* Text color set to black */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style for text */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    } /* Body styling end */
+
+    h1 { /* Main heading styling */
+      text-align: center; /* Center the heading */
+      color: darkslategray; /* Set heading color */
+      margin: 20px 0; /* Add space above and below */
+      font-size: 2.5rem; /* Increase font size */
+    } /* h1 end */
+
+    hr { /* Horizontal line styling */
+      border: none; /* Remove default border */
+      height: 3px; /* Set height of line */
+      background: linear-gradient(to right, blue, darkslategray); /* Gradient color line */
+      width: 60%; /* Width set to 60% of page */
+      margin: 10px auto 30px auto; /* Center and add spacing */
+      border-radius: 5px; /* Rounded edges */
+    } /* hr end */
+
+    .box { /* Box container styling */
+      background: whitesmoke; /* Light grey background */
+      border: 1px solid lightgray; /* Thin grey border */
+      border-radius: 8px; /* Rounded corners */
+      padding: 20px; /* Inner spacing */
+      margin: 20px auto; /* Outer spacing centered */
+      width: 80%; /* Box width 80% of page */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Shadow effect */
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+    } /* box end */
+
+    .box:hover { /* Box hover effect */
+      transform: translateY(-5px); /* Slightly lift box upward */
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Darker shadow on hover */
+    } /* box:hover end */
+
+    h2 { /* Section heading styling */
+      color: blue; /* Heading text color blue */
+      margin-top: 0; /* Remove top margin */
+      border-left: 5px solid darkslategray; /* Colored left border */
+      padding-left: 10px; /* Padding to separate text from border */
+    } /* h2 end */
+
+    p, ul { /* Paragraph and unordered list styling */
+      line-height: 1.6; /* Set line spacing */
+      font-size: 1rem; /* Set font size */
+    } /* p, ul end */
+
+    ul li { /* List item styling */
+      margin: 6px 0; /* Add spacing between list items */
+    } /* ul li end */
+
+    .about-container { /* About section flex layout */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Vertically align items */
+      gap: 20px; /* Space between items */
+    } /* about-container end */
+
+    .about-container img { /* Profile image styling */
+      border-radius: 50%; /* Make image round */
+      border: 4px solid blue; /* Blue circular border */
+      width: 180px; /* Set image width */
+      height: 180px; /* Set image height */
+      object-fit: cover; /* Properly crop image */
+    } /* about-container img end */
+
+    .footer { /* Footer styling */
+      text-align: center; /* Center footer text */
+      margin-top: 20px; /* Space above footer */
+      padding: 10px; /* Inner padding */
+      border-top: 1px solid silver; /* Top border line */
+      font-size: 14px; /* Font size small */
+      background: gainsboro; /* Light gray background */
+      color: dimgray; /* Text color dim gray */
+    } /* footer end */
+
+    a { /* Link styling */
+      color: blue; /* Link text color blue */
+      text-decoration: none; /* Remove underline */
+      font-weight: 500; /* Medium bold text */
+    } /* a end */
+
+    a:hover { /* Link hover effect */
+      text-decoration: underline; /* Underline on hover */
+      color: darkslategray; /* Darker color when hovered */
+    } /* a:hover end */
+
+    .btn-link { /* Common button style for links */
+      display: inline-block; /* Make link behave like a button */
+      color: white; /* White text */
+      padding: 8px 15px; /* Inner spacing */
+      border-radius: 20px; /* Rounded corners */
+      font-weight: bold; /* Bold text */
+      transition: 0.3s; /* Smooth hover transition */
+    } /* btn-link end */
+
+    .email-btn { background-color: #D44638; } /* Gmail red button */
+    .email-btn:hover { background-color: #b23121; } /* Darker red on hover */
+
+    .github-btn { background-color: #24292e; } /* GitHub black button */
+    .github-btn:hover { background-color: #000; } /* Pure black on hover */
+
+    .linkedin-btn { background-color: #0077b5; } /* LinkedIn blue button */
+    .linkedin-btn:hover { background-color: #005582; } /* Darker blue hover */
+
+    .whatsapp-btn { background-color: #25D366; } /* WhatsApp green button */
+    .whatsapp-btn:hover { background-color: #128C7E; } /* Darker green hover */
+
+  </style> <!-- CSS section ends -->
+</head> <!-- Head section ends -->
+
+<body> <!-- Body section starts -->
+
+  <h1>Welcome to My Portfolio</h1> <!-- Main page heading -->
+  <hr> <!-- Decorative horizontal line -->
+
+  <div class="box" id="about"> <!-- About section container -->
+    <h2>About Me</h2> <!-- About section heading -->
+    <div class="about-container"> <!-- Flexbox for image and text -->
+      <img src="kiran77.jpg" alt="Kiran Siddique"> <!-- Profile image -->
+      <p>I’m <b>Kiran Siddique</b>, a passionate Computer Science student at 
+      <b>Fatima Jinnah Women University</b>, currently in <b>Semester 5</b>.  
+      I enjoy exploring programming, artificial intelligence, and creative design. 
+      My aim is to build innovative solutions that combine technology with creativity.</p> <!-- About paragraph -->
+    </div> <!-- about-container end -->
+  </div> <!-- About section end -->
+
+  <div class="box" id="skills"> <!-- Skills section start -->
+    <h2>Skills</h2> <!-- Skills heading -->
+    <ul> <!-- Unordered list of skills -->
+      <li><b>Programming:</b> C, C++, Python, PHP, JavaScript</li> <!-- Programming skills -->
+      <li><b>Web:</b> HTML, CSS, JavaScript, PHP, MySQL</li> <!-- Web development skills -->
+      <li><b>Databases:</b> MySQL, NoSQL</li> <!-- Database skills -->
+      <li><b>AI:</b> Game Development & Algorithms in Python</li> <!-- AI-related skills -->
+      <li><b>Hardware:</b> Networking & Arduino</li> <!-- Hardware knowledge -->
+      <li><b>Creative:</b> Canva, Content Writing, Magazine Designing</li> <!-- Creative tools -->
+    </ul> <!-- End of skills list -->
+  </div> <!-- Skills section end -->
+
+  <div class="box" id="experience"> <!-- Experience section start -->
+    <h2>Experience</h2> <!-- Experience heading -->
+    <p>I have worked on multiple academic and personal projects that showcase my ability to solve real-world problems. Some highlights include:</p> <!-- Introductory paragraph -->
+    <ul> <!-- Experience list -->
+      <li>Designed <b>magazines and digital posters</b> using Canva</li> <!-- Design experience -->
+      <li>Developed a <b>Sudoku Game with AI</b> in Python</li> <!-- Game project -->
+      <li>Built a <b>Courier Management System</b> using OOP and database integration</li> <!-- OOP project -->
+      <li>Worked on <b>University Transport System</b> with PHP, JS, and XAMPP</li> <!-- Web system -->
+      <li>Implemented <b>Dijkstra’s Algorithm</b> for a University Tracking System</li> <!-- Algorithm implementation -->
+    </ul> <!-- End of experience list -->
+  </div> <!-- Experience section end -->
+
+  <div class="box" id="projects"> <!-- Projects section start -->
+    <h2>Projects</h2> <!-- Projects heading -->
+    <ul> <!-- Projects list -->
+      <li>🎮 Sudoku Game (AI + Python)</li> <!-- Sudoku project -->
+      <li>🏫 University Management & Transport Systems</li> <!-- Management project -->
+      <li>📂 File & Contact Management Systems (C & C++)</li> <!-- File system project -->
+      <li>📦 Courier Management System (OOP + DB)</li> <!-- Courier project -->
+      <li>🌐 Websites using HTML, CSS & JS</li> <!-- Website projects -->
+    </ul> <!-- End of projects list -->
+  </div> <!-- Projects section end -->
+
+  <div class="box" id="contact"> <!-- Contact section start -->
+    <h2>Contact Me</h2> <!-- Contact heading -->
+
+    <p>📧 Email: 
+      <a class="btn-link email-btn" href="mailto:23-20911-052@cs.fjwu.edu.pk">Send Me an Email</a>
+    </p> <!-- Email button with mailto link -->
+
+    <p>💻 GitHub: 
+      <a class="btn-link github-btn" href="https://github.com/KiranSiddique" target="_blank">Visit My GitHub</a>
+    </p> <!-- GitHub profile link -->
+
+    <p>🔗 LinkedIn: 
+      <a class="btn-link linkedin-btn" href="https://www.linkedin.com/in/kiran-siddique-a09514355/" target="_blank">Visit My LinkedIn</a>
+    </p> <!-- LinkedIn profile link -->
+
+    <p>📱 WhatsApp: 
+      <a class="btn-link whatsapp-btn" href="https://wa.me/923348548449" target="_blank">Chat on WhatsApp</a>
+    </p> <!-- WhatsApp contact link -->
+
+  </div> <!-- Contact section end -->
+
+  <div class="footer"> <!-- Footer start -->
+    © 2025 Kiran Siddique | Portfolio <!-- Footer content -->
+  </div> <!-- Footer end -->
+
+</body> <!-- Body section ends -->
+</html> <!-- HTML document ends -->
